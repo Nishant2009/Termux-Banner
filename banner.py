@@ -4,7 +4,7 @@ os.system("""command -v lolcat > /dev/null 2>&1 || { echo >&2 "...";echo "";echo
 command -v toilet > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] Toilet Installing...";pkg install toilet;clear; }
 command -v figlet > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] Figlet Installing...";pkg install figlet;clear; }""")
 
-name = input('What To Write On Banner :  ')
+name = input('What To Write On Banner (eg. NISHANT):  ')
 is_skipped = False
 with open("..//usr//etc//bash.bashrc", "r") as r, open("ab.txt", "w") as w:
   for line in r:
