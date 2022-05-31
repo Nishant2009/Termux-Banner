@@ -1,6 +1,6 @@
 import os
 
-os.system("""command -v lolcat > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] lolcat Installing...";pip install git+https://github.com/Nishant2009/lolcat.git;clear; }
+os.system("""cd $HOME && command -v lolcat > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] lolcat Installing...";pip install git+https://github.com/Nishant2009/lolcat.git;clear; }
 command -v toilet > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] Toilet Installing...";pkg install toilet -y;clear; }
 command -v figlet > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] Figlet Installing...";pkg install figlet -y;clear; }
 command -v mpv > /dev/null 2>&1 || { echo >&2 "...";echo "";echo "";echo "[^^] Figlet Installing...";pkg install mpv -y;clear; }""")
